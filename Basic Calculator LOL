@@ -1,0 +1,20 @@
+static int calculator(char ch, int a, int b)
+    {
+        int result=0;
+         if(ch== '+')
+         result = a+b;
+         else if(ch== '-')
+         result = a-b;
+         else if(ch == '/')
+         result = a/b;
+         else if(ch == '*')
+         result = a*b;
+         return result;
+     }
+     
+     
+     
+    Additional Notes = 
+    Character can be accepted as input through - "char c = sc.next().charAt(0);" syntax
+    
+   
