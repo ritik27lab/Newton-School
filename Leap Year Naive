@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main {
+
+
+    static String LeapYear(int year){
+    String ans= " ";
+    if(((year % 4==0) && (year% 100!=0)) || (year % 400== 0))
+    ans = "YES";
+    else
+    ans = "NO";
+    return ans;
+}
+
+
+   public static void main (String[] args)
+   {
+       //Capture the user's input
+       Scanner scanner = new Scanner(System.in);
+       //Storing the captured value in a variable
+       int year = scanner.nextInt();
+       String ans = LeapYear(year);
+       System.out.println(ans);
+
+    
+}
+
+}
